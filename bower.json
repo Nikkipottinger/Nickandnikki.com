@@ -1,0 +1,12 @@
+{
+  "name": "chrisandloo",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.1.0",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.11.0",
+    "jquery.onepage-scroll": "~1.1.10",
+    "html5shiv": "~3.7.2",
+    "selectivizr": "~1.0.2"
+  }
+}
