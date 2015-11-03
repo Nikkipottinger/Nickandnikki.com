@@ -17,7 +17,7 @@ module.exports = function (grunt) {
 
     // Configurable paths
     var config = {
-        app: '.',
+        app: 'app',
         dist: 'dist'
     };
 
@@ -481,7 +481,6 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('build', [
-        'clean:dist',
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
@@ -495,7 +494,6 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('default', [
-        'build',
-        'ftp-deploy'
+        'build'
     ]);
 };
