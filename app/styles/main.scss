@@ -197,7 +197,7 @@ header {
 
     &:hover {
         background-color: transparent;
-        color: $theme-purple;
+        color: $theme-purple !important;
     }
 }
 
