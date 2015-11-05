@@ -1,0 +1,560 @@
+// Fonts
+@font-face {
+    font-family: 'langdon';
+    src: url('../fonts/langdon/langdon-webfont.eot');
+    src: url('../fonts/langdon/langdon-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/langdon/langdon-webfont.woff2') format('woff2'),
+    url('../fonts/langdon/langdon-webfont.woff') format('woff'),
+    url('../fonts/langdon/langdon-webfont.ttf') format('truetype'),
+    url('../fonts/langdon/langdon-webfont.svg#langdonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo';
+    src: url('../fonts/museo/museoslab-500-webfont.eot');
+    src: url('../fonts/museo/museoslab-500-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/museo/museoslab-500-webfont.woff2') format('woff2'),
+    url('../fonts/museo/museoslab-500-webfont.woff') format('woff'),
+    url('../fonts/museo/museoslab-500-webfont.ttf') format('truetype'),
+    url('../fonts/museo/museoslab-500-webfont.svg#museo_slab500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$nav-font-size: 18px;
+
+// Colors
+$main-color: #3f74b8;
+$secondary-color: #e74543;
+$theme-blue: $main-color;
+$theme-red: #f39229;
+$theme-yellow: #fed259;
+$theme-green: #58b366;
+$theme-purple: #9d6bb6;
+$third-color: #ac8d7a;
+$black-color: #323232;
+$main-font-color: #323232;
+$light-fill-color: #ffffff;
+$title-font-color: $main-color;
+
+// Dimensions
+$tool-bar-height: 80px;
+$section-padding: 50px;
+$main-padding: 20px;
+
+body {
+    font-family: "museo", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    line-height: 1.3;
+    color: $main-color;
+    margin-top: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    &.secondary {
+        color: $secondary-color;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    &.theme-green {
+        color: $theme-green;
+    }
+
+    &.theme-red {
+        color: $theme-red;
+    }
+
+    &.theme-black {
+        color: $main-font-color;
+    }
+}
+
+h1, h2 {
+    color: $main-color;
+    text-transform: lowercase;
+}
+
+h1 {
+    font-size: 100px;
+
+    @media(max-width: 765px) {
+        font-size: 50px;
+    }
+
+    &.framed {
+        $border: 1px solid #dedede;
+
+        border-top: $border;
+        border-bottom: $border;
+        display: inline-block;
+        line-height: 60px;
+        padding-top: 8px;
+    }
+
+    font-family: "langdon", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    font-family: "langdon", Helvetica, Arial, sans-serif;
+}
+
+p, a {
+    font-family: "museo", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: $theme-yellow;
+
+    &:hover {
+        color: $theme-purple;
+    }
+}
+
+p {
+    font-size: 18px;
+    color: $black-color;
+}
+
+header {
+    .row {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    a {
+        font-family: "museo", Helvetica, Arial, sans-serif;
+    }
+}
+
+.row {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+}
+
+.address {
+    text-align: right;
+
+    @media (max-width: 600px) {
+        text-align: left;
+    }
+}
+
+.poem {
+    text-align: center;
+}
+
+.centered-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.larger-copy {
+    font-size: 14px;
+}
+
+.top-nav {
+    background: $light-fill-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $tool-bar-height;
+    z-index: 999999;
+
+    box-shadow: inset -1px 0 0 0 #d2d2d2, inset -1px 0 0 0 #e6e6e6, inset 1px 0 0 0 #d2d2d2, 1px 0 0 0 #e6e6e6, 0 -1px 0 0 #e8e8e8, 0 2px 0 0 rgba(241, 241, 241, 0.3), 0 1px 0 0 #b1b1b1;
+}
+
+.top-bar, .top-bar.expanded .title-area {
+    background: none;
+}
+
+.top-bar-section ul li p {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+    line-height: 60px;
+    font-weight: 400;
+}
+
+.top-bar-section ul li > a {
+    font-size: $nav-font-size;
+    background: none;
+    color: $main-font-color;
+
+    @media(max-width: 765px) {
+        padding: 5px 5px !important;
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: $theme-purple;
+    }
+}
+
+.top-bar .name h1 a {
+    background: url(../images/header/logo-mobile.png);
+    background-position: center center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    text-indent: -999px;
+    width: 115px;
+}
+
+.top-bar .toggle-topbar.menu-icon a::after {
+    -webkit-box-shadow: 0 10px 0 1px $main-font-color, 0 16px 0 1px $main-font-color, 0 22px 0 1px $main-font-color;
+    box-shadow: 0 10px 0 1px $main-font-color, 0 16px 0 1px $main-font-color, 0 22px 0 1px $main-font-color;
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+    color: $main-font-color;
+    font-size: $nav-font-size;
+}
+
+.top-bar.expanded .toggle-topbar a {
+    color: $theme-purple;
+    font-size: $nav-font-size;
+}
+
+.top-bar.expanded .toggle-topbar a span {
+    box-shadow: none;
+}
+
+.top-bar-section {
+    .right {
+        background-color: $light-fill-color;
+    }
+}
+
+section h3 {
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 600;
+}
+
+.section-title {
+    margin-bottom: 0px;
+    background-color: $main-color;
+    color: $light-fill-color;
+    text-align: center;
+    padding: $section-padding * 0.5 0 $section-padding * 0.5 0;
+    margin: 0px;
+
+    &.red {
+        background-color: $theme-red;
+    }
+
+    &.yellow {
+        background-color: $theme-yellow;
+    }
+
+    &.green {
+        background-color: $theme-green;
+    }
+
+    &.blue {
+        background-color: $theme-blue;
+    }
+}
+
+.about-section {
+    text-align: center;
+
+    .about-row {
+        @media(max-width: 765px) {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.about-section-polaroid {
+    display: block;
+    margin: 0 auto;
+
+    @media(max-width: 765px) {
+        margin-bottom: 40px;
+    }
+}
+
+.about-section-intro {
+    font-size: 27px;
+
+    @media(max-width: 765px) {
+        padding: 20px;
+    }
+}
+
+.location-section .location-section-row {
+    @media(max-width: 765px) {
+        padding-top: 0;
+    }
+}
+
+.accommodation-section {
+    a {
+        display: block;
+        text-align: center;
+        padding-bottom: $main-padding / 2;
+    }
+}
+
+.travel {
+    text-align: center;
+
+    padding-top: 0px;
+}
+
+.hero-wrap .logo-wrap {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: table;
+    height: 100%;
+    margin-top: $tool-bar-height / 2;
+}
+
+.hero-wrap .logo-wrap > span {
+    display: table-cell;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.hero-wrap .logo-wrap > span > img {
+    display: block;
+    margin: 0 auto;
+}
+
+.about-wrap {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about-wrap .section-title {
+    color: #273747;
+}
+
+.circle-icon {
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 20px auto;
+    background-position: center center;
+    background-size: 100%;
+}
+
+.bride-icon {
+    background-image: url(../images/bride.png);
+}
+
+.groom-icon {
+    background-image: url(../images/groom.png);
+}
+
+.underground-icon {
+    background-image: url(../images/underground.png);
+}
+
+.overground-icon {
+    background-image: url(../images/overground.png);
+}
+
+.bus-icon {
+    background-image: url(../images/bus.png);
+}
+
+.heart-icon {
+    background-image: url(../images/hearts.png);
+    width: 63px;
+    height: 39px;
+    display: block;
+    margin: 20px auto;
+    background-position: center center;
+    background-size: 100%;
+    margin-top: 150px;
+}
+
+.services-wrap {
+    background: #ececec;
+    color: #273747;
+    padding: 50px 0;
+}
+
+.services-wrap .section-title {
+    color: #273747;
+}
+
+.services-wrap h3 {
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.services-wrap .service-icon {
+    display: block;
+    position: absolute;
+    left: 10px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.services-wrap .service-icon.carpets {
+    background-image: url(../images/carpetcleans.png);
+}
+
+.services-wrap .service-icon.floor {
+    background-image: url(../images/vacuum.png);
+}
+
+.services-wrap .service-icon.supplies {
+    background-image: url(../images/surface.png);
+}
+
+.services-wrap .service-icon.office {
+    background-image: url(../images/officecleans.png);
+}
+
+.services-wrap .service-icon.waste {
+    background-image: url(../images/eco_dispose.png);
+}
+
+.services-wrap .service-icon.windows {
+    background-image: url(../images/window.png);
+}
+
+.clients-wrap {
+    background: #0094b8;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.clients-wrap .section-title {
+    color: #fff;
+}
+
+.quote-carousel {
+    overflow: hidden;
+}
+
+.quote-carousel .owl-item {
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.quote-carousel .item p {
+    font-size: 16px;
+    font-weight: 300;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.quote-carousel .item p:last-child {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 10px auto 0;
+}
+
+.quote-carousel .owl-controls .owl-page {
+    display: inline-block;
+}
+
+.quote-carousel .owl-controls .owl-page span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 7px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.quote-carousel .owl-controls .owl-page.active span {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.gallery-wrap {
+    padding: 50px 0;
+}
+
+.maps-wrap {
+    width: 100%;
+    height: 600px;
+}
+
+.maps-wrap .map {
+    width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#mapCanvas img {
+    max-width: none;
+}
+
+.footer-wrap {
+    background: #273747;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.footer-wrap .section-title {
+    color: #fff;
+}
+
+.store-icon {
+    margin-right: 10px;
+}
+
+.google-play-link {
+    margin-left: 20px;
+}
+
+.row-wedpics {
+    padding-top: 0px;
+}
+
+.payment {
+    text-align: center;
+
+    table {
+        display: block;
+        td {
+            font-family: 'museo';
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero-wrap .background-video {
+        display: none;
+    }
+
+    .top-bar-section ul li p {
+        line-height: 1;
+        padding: 12px 0 12px 15px;
+    }
+}
+
+.rsvp-email {
+    word-break: break-word;
+    word-wrap: break-word;
+}

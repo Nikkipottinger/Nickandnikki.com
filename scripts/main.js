@@ -97,7 +97,7 @@
             );
 
         var hotel1Info = new google.maps.InfoWindow({
-            content: '<h2 class="accommodation-info-title">Ye Olde White Harte</h2><a target="_blank" href="http://www.whiteharteburnham.co.uk/">http://www.whiteharteburnham.co.uk/</a>'
+            content: '<h2 class="accommodation-info-title theme-red">Ye Olde White Harte</h2><a target="_blank" class="theme-black" href="http://www.whiteharteburnham.co.uk/">http://www.whiteharteburnham.co.uk/</a>'
         });
         var hotel1Marker = new google.maps.Marker({
             clickable: true,
@@ -111,7 +111,7 @@
         });
 
         var hotel2Info = new google.maps.InfoWindow({
-            content: '<h2 class="accommodation-info-title">The Thatched Cottages</h2><a target="_blank" href="http://www.thethatchedcottages.co.uk/">http://www.thethatchedcottages.co.uk/</a>'
+            content: '<h2 class="accommodation-info-title theme-red">The Thatched Cottages</h2><a target="_blank" class="theme-black" href="http://www.thethatchedcottages.co.uk/">http://www.thethatchedcottages.co.uk/</a>'
         });
         var hotel2Marker = new google.maps.Marker({
             clickable: true,
@@ -125,7 +125,7 @@
         });
 
         var hotel3Info = new google.maps.InfoWindow({
-            content: '<h2 class="accommodation-info-title">Crouch Valley Motel</h2><a target="_blank" href="http://www.crouchvalley.com/BOC/service.asp?ccd=crouch_valley_hotel">http://www.crouchvalley.com/</a>'
+            content: '<h2 class="accommodation-info-title theme-red">Crouch Valley Motel</h2><a target="_blank" class="theme-black" href="http://www.crouchvalley.com/BOC/service.asp?ccd=crouch_valley_hotel">http://www.crouchvalley.com/</a>'
         });
         var hotel3Marker = new google.maps.Marker({
             clickable: true,
@@ -139,7 +139,7 @@
         });
 
         var hotel4Info = new google.maps.InfoWindow({
-            content: '<h2 class="accommodation-info-title">The Royal Burnham Yacht Club</h2><a target="_blank" href="http://www.rbyc.org.uk/accommodation.asp">http://www.rbyc.org.uk/accommodation.asp/</a>'
+            content: '<h2 class="accommodation-info-title theme-red">The Royal Burnham Yacht Club</h2><a target="_blank" class="theme-black" href="http://www.rbyc.org.uk/accommodation.asp">http://www.rbyc.org.uk/accommodation.asp/</a>'
         });
         var hotel4Marker = new google.maps.Marker({
             clickable: true,
@@ -153,7 +153,7 @@
         });
 
         var hotel5Info = new google.maps.InfoWindow({
-            content: '<h2 class="accommodation-info-title">The Anchor Hotel</h2><a target="_blank" href="http://www.theanchorburnham.co.uk/">http://www.theanchorburnham.co.uk/</a>'
+            content: '<h2 class="accommodation-info-title theme-red">The Anchor Hotel</h2><a target="_blank" class="theme-black" href="http://www.theanchorburnham.co.uk/">http://www.theanchorburnham.co.uk/</a>'
         });
         var hotel5Marker = new google.maps.Marker({
             clickable: true,
@@ -167,7 +167,7 @@
         });
 
         var hotel6Info = new google.maps.InfoWindow({
-            content: '<h2 class="accommodation-info-title">Burnt Mills Cottage</h2><a target="_blank" href="http://burntmillcottagebandb.com/home.php">http://burntmillcottagebandb.com/</a>'
+            content: '<h2 class="accommodation-info-title theme-red">Burnt Mills Cottage</h2><a target="_blank" class="theme-black" href="http://burntmillcottagebandb.com/home.php">http://burntmillcottagebandb.com/</a>'
         });
         var hotel6Marker = new google.maps.Marker({
             clickable: true,
@@ -181,7 +181,7 @@
         });
 
         var hotel7Info = new google.maps.InfoWindow({
-            content: '<h2 class="accommodation-info-title">Forty Winks B and B </h2><a target="_blank" href="http://www.fortywinksburnham.co.uk/">http://www.fortywinksburnham.co.uk/</a>'
+            content: '<h2 class="accommodation-info-title theme-red">Forty Winks B and B </h2><a target="_blank" class="theme-black" href="http://www.fortywinksburnham.co.uk/">http://www.fortywinksburnham.co.uk/</a>'
         });
         var hotel7Marker = new google.maps.Marker({
             clickable: true,
@@ -195,7 +195,7 @@
         });
 
         var hotel8Info = new google.maps.InfoWindow({
-            content: '<h2 class="accommodation-info-title">The Blue Boar Hotel</h2><a target="_blank" href="http://www.blueboarmaldon.co.uk/">http://www.blueboarmaldon.co.uk/</a>'
+            content: '<h2 class="accommodation-info-title theme-red">The Blue Boar Hotel</h2><a target="_blank" class="theme-black" href="http://www.blueboarmaldon.co.uk/">http://www.blueboarmaldon.co.uk/</a>'
         });
         var hotel8Marker = new google.maps.Marker({
             clickable: true,
@@ -209,7 +209,7 @@
         });
 
         var hotel9Info = new google.maps.InfoWindow({
-            content: '<h2 class="accommodation-info-title">The Railway Hotel</h2><a target="_blank" href="http://therailwayhotelburnham.mobi/">http://therailwayhotelburnham.mobi/</a>'
+            content: '<h2 class="accommodation-info-title theme-red">The Railway Hotel</h2><a target="_blank" class="theme-black" href="http://therailwayhotelburnham.mobi/">http://therailwayhotelburnham.mobi/</a>'
         });
         var hotel9Marker = new google.maps.Marker({
             clickable: true,
@@ -223,7 +223,7 @@
         });
 
         var hotel10Info = new google.maps.InfoWindow({
-            content: '<h2 class="accommodation-info-title">The Oyster Smack Inn</h2><a target="_blank" href="http://www.theoystersmackinn.co.uk/">http://www.theoystersmackinn.co.uk/</a>'
+            content: '<h2 class="accommodation-info-title theme-red">The Oyster Smack Inn</h2><a target="_blank" class="theme-black" href="http://www.theoystersmackinn.co.uk/">http://www.theoystersmackinn.co.uk/</a>'
         });
         var hotel10Marker = new google.maps.Marker({
             clickable: true,
