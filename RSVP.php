@@ -16,7 +16,7 @@ if(empty($name)||empty($RSVP))
 }
 
 
-$email_from = 'RSVP@nickandnikki.co.uk';//
+$email_from = 'nickandnikkigetmarried@gmail.com';//
 $email_subject = "RSVP;
 $email_body = "You have received a new message from the user $name.\n".
     "Here is the message:\n.$RSVP; \n $message".
