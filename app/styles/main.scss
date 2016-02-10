@@ -27,12 +27,13 @@
 $nav-font-size: 18px;
 
 // Colors
-$main-color: #3f74b8;
+$main-color: #3fb5b8;
 $secondary-color: #e74543;
 $theme-blue: $main-color;
 $theme-red: #f39229;
+$theme-orange: #e71e1e;
 $theme-yellow: #fed259;
-$theme-green: #58b366;
+$theme-green: #68b83f;
 $theme-purple: #9d6bb6;
 $third-color: #ac8d7a;
 $black-color: #323232;
@@ -68,6 +69,9 @@ h1, h2, h3, h4, h5, h6, p, a {
         color: $theme-red;
     }
 
+&.theme-orange {
+        color: $theme-orange;
+    }
     &.theme-black {
         color: $main-font-color;
     }
@@ -261,6 +265,10 @@ section h3 {
         background-color: $theme-green;
     }
 
+    &.orange {
+        background-color: $theme-orange;
+    }
+
     &.blue {
         background-color: $theme-blue;
     }
@@ -302,7 +310,7 @@ section h3 {
 .accommodation-section {
     a {
         display: block;
-        text-align: center;
+        text-align: left;
         padding-bottom: $main-padding / 2;
     }
 }
