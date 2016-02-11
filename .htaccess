@@ -1,6 +1,4 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^nickandnikki.co.uk [NC]
-RewriteRule ^(.*)$ http://www.nickandnikki.co.uk/$1 [L,R=301]
+Redirect 301 / http://www.nickandnikki.co.uk/
 
 
 # Apache Server Configs v2.2.0 | MIT License
