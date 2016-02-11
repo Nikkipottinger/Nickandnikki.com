@@ -62,7 +62,7 @@ p, a {
   font-family: "museo", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #fed259; }
+  color: #F8F92D; }
   a:hover {
     color: #9d6bb6; }
 
@@ -169,7 +169,7 @@ section h3 {
   .section-title.red {
     background-color: #f39229; }
   .section-title.yellow {
-    background-color: #fed259; }
+    background-color: #F8F92D; }
   .section-title.green {
     background-color: #68b83f; }
   .section-title.orange {
@@ -204,6 +204,9 @@ section h3 {
   display: block;
   text-align: left;
   padding-bottom: 10px; }
+
+.accommodation-section .intro-link {
+  display: inline; }
 
 .travel {
   text-align: center;
