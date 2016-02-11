@@ -80,7 +80,7 @@
         var latlng = new google.maps.LatLng(51.662849, 0.809033),
             mapOptions = {
                 center: latlng,
-                zoom: 12,
+                zoom: 11,
                 maxZoom: 20,
                 minZoom: 10,
                 scrollwheel: false
@@ -234,6 +234,27 @@
         });
         hotel10Marker.addListener('click', function() {
             hotel10Info.open(map, hotel10Marker);
+        });
+
+        var hotel11Info = new google.maps.InfoWindow({
+            content: '<h2 class="accommodation-info-title theme-red">The Oakland Hotel</h2><a target="_blank" class="theme-black" href="http://theoaklandhotel.co.uk/">http://theoaklandhotel.co.uk/</a>'
+        });
+        var hotel11Marker = new google.maps.Marker({
+            clickable: true,
+            map: map,
+            position: new google.maps.LatLng(51.644682, 0.618995),
+            icon: new google.maps.MarkerImage('images/pin_hotel_red.png',
+                // This marker is 129 pixels wide by 42 pixels tall.
+                new google.maps.Size(30, 48),
+                // The origin for this image is 0,0.
+                new google.maps.Point(0, 0),
+                // The anchor for this image is the base of the flagpole at 18,42.
+                new google.maps.Point(15, 48)
+                ),
+            title: 'The Oakland Hotel'
+        });
+        hotel11Marker.addListener('click', function() {
+            hotel11Info.open(map, hotel11Marker);
         });
 
         var venueMarker = new google.maps.Marker({
