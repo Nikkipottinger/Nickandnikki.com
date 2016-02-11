@@ -32,7 +32,7 @@ $secondary-color: #e74543;
 $theme-blue: $main-color;
 $theme-red: #f39229;
 $theme-orange: #e71e1e;
-$theme-yellow: #fed259;
+$theme-yellow: #F8F92D;
 $theme-green: #68b83f;
 $theme-purple: #9d6bb6;
 $third-color: #ac8d7a;
@@ -313,6 +313,11 @@ section h3 {
         text-align: left;
         padding-bottom: $main-padding / 2;
     }
+
+    .intro-link {
+        display: inline;
+    }
+    
 }
 
 .travel {
