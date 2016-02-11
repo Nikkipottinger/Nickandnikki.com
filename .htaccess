@@ -1,3 +1,8 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^nickandnikki.co.uk [NC]
+RewriteRule ^(.*)$ http://www.nickandnikki.co.uk/$1 [L,R=301]
+
+
 # Apache Server Configs v2.2.0 | MIT License
 # https://github.com/h5bp/server-configs-apache
 
