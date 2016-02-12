@@ -311,6 +311,8 @@ section h3 {
     a {
         display: block;
         text-align: left;
+        word-break: break-word;
+        word-wrap: break-word;
         padding-bottom: $main-padding / 2;
     }
 
